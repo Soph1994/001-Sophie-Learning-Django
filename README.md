@@ -4,7 +4,7 @@
 
 1.1. S'assurer que l'on a le programme pour créer un environnement virtuel 
 </br>
-'virtualenv--version'
+`virtualenv--version`
 
 1.2. Créer l'environnement virtuel
 </br>
@@ -36,6 +36,15 @@
 2.4. Inclure les urls blogs dans l'application core
 
 
+## 3. Créer une page web
+
+3.1. Créer une url pour diriger vers la vue
+
+3.2. Créer une vue qui sera appelée par l'url pour diriger vers le template
+
+3.3. Préparer le template
+
+
 ## Points importants à connaître
 
 1. Arrêter le serveur Django en serveur local
@@ -48,6 +57,10 @@ Cliquer sur le terminal et faire Ctrl+C
 3. Ajouter un fichier pour ignaurer les fichiers que l'on ne doit pas suivre:
 </br>
 `.gitignore`
+
+4. Activer l'environnement virtuel
+<br/>
+`.\venv\Scripts\activate`
 
 
 
