@@ -22,16 +22,18 @@
 </br>
 `python manage.py runserver`
 
+
 ## 2. Créer une APPLICATION Django
 
-2.1 Créer une application dans le projet avec le nom blogs
+2.1. Créer une application dans le projet avec le nom blogs
 </br>
 `python manage.py startapp blogs`
 
-2.2 Créer le fichier urls.py dans le dossier de l'application créée
+2.2. Créer le fichier urls.py dans le dossier de l'application créée
 
-2.3 Enregistrer l'application blogs dans le fichier settings 
+2.3. Enregistrer l'application blogs dans le fichier settings 
 
+2.4. Inclure les urls blogs dans l'application core
 
 
 ## Points importants à connaître
