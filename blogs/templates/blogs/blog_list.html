@@ -1,0 +1,12 @@
+﻿  <!-- Extend the base -->
+{% extends 'base.html' %}
+
+  <!-- Repeat block name in base.html -->
+{% block content %}
+
+  <!-- Loop through Blog -->
+  {% for blog in object_list %}
+    <p>{{ blog.title }}</p>
+  {% endfor %}
+
+{%endblock %}

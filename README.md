@@ -106,6 +106,19 @@
 
 7.5. Ajouter deux lignes au modèle Post
 
+## 8. Ajouter une ListView
+
+8.1. création d'un url
+
+8.2. création d'une ListView
+
+8.3. création d'un folder template ListView
+
+8.4. Ajouter l'extension de la base.html et les blocks content
+
+8.5. Créer une boucle sur les blogs dans le template blog_list.html
+``
+
 ## Points importants à connaître
 
 1. Arrêter le serveur Django en serveur local
