@@ -71,6 +71,15 @@
 `{% block content %}`</br>
 `{% endblock %}`
 
+## 5. Intégrer les éléments de navigation
+
+5.1 ajouter dans le dossier template à la racine du projet, le fichier navbar.html
+
+5.2. récupérer le modèle de navbar que vous désirez sur [Bootstrap navbar](https://getbootstrap.com/docs/4.3/components/navbar/) coller le modèle dans le fichier navbar.html
+
+5.3. inclure dans le fichier base.html le contenu de la navbar avec la commande suivante:</br>
+`{% include 'navbar.html' %}`
+
 ## Points importants à connaître
 
 1. Arrêter le serveur Django en serveur local
