@@ -120,10 +120,17 @@
 
 ## 9. Mettre dans une table html la ListView
 
-1. Mettre le format de table bootstrap. [table bootstrap](https://getbootstrap.com/docs/4.0/content/tables/)
+9.1. Mettre le format de table bootstrap. [table bootstrap](https://getbootstrap.com/docs/4.0/content/tables/)
 
-2. Intégrer la boucle dans la table html 
+9.2. Intégrer la boucle dans la table html 
 
+## 10. Ajouter une Vue CREER Blog
+
+10.1. Ajouter une url
+
+10.2. Ajouter une vue
+
+10.3 Ajouter un template
 
 ## Points importants à connaître
 
