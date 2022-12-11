@@ -117,7 +117,13 @@
 8.4. Ajouter l'extension de la base.html et les blocks content
 
 8.5. Créer une boucle sur les blogs dans le template blog_list.html
-``
+
+## 9. Mettre dans une table html la ListView
+
+1. Mettre le format de table bootstrap. [table bootstrap](https://getbootstrap.com/docs/4.0/content/tables/)
+
+2. Intégrer la boucle dans la table html 
+
 
 ## Points importants à connaître
 
