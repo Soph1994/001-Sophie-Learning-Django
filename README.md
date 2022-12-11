@@ -90,6 +90,22 @@
 6.3. Générer les tables dans la base de donnée
 `python manage.py migrate`
 
+## 7. Ajouter des données au modèle de donnée
+
+7.1. importer le model dans le fichier admin.py
+`from .models import Post`
+
+7.2. Ajouter le modèle Post au menu admin
+`admin.site.register(Post)`
+
+7.3. Créer un superuser dans le terminal et suivez les instructions
+`python manage.py createsuperuser`
+
+7.4. Se connecter a l'espace Admin
+`localhost:8000/admin`
+
+7.5. Ajouter deux lignes au modèle Post
+
 ## Points importants à connaître
 
 1. Arrêter le serveur Django en serveur local
