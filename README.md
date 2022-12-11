@@ -59,8 +59,17 @@ Cliquer sur le terminal et faire Ctrl+C
 `.gitignore`
 
 4. Activer l'environnement virtuel
-<br/>
+</br>
 `.\venv\Scripts\activate`
+
+5. Figer les librairies installés dans le fichier requirements.txt</br>
+`pip freeze > requirements.txt`
+
+6. Installer les librairies téléchargés du projet</br>
+`pip install -r requirements.txt`
+
+
+
 
 
 
