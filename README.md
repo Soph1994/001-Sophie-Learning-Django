@@ -4,7 +4,7 @@
 
 1.1. S'assurer que l'on a le programme pour créer un environnement virtuel 
 </br>
-`virtualenv--version`
+`virtualenv --version`
 
 1.2. Créer l'environnement virtuel
 </br>
@@ -44,6 +44,41 @@
 
 3.3. Préparer le template
 
+## 4. Intégrer Bootstrap au projet
+
+4.1. Ajouter BASE_DIR / "templates" au fichier settings
+
+4.2. Ajouter à settings le STATIC_URL</br>
+`STATIC_URL = '/static/'`
+
+4.3. Ajouter à settings le STATIC_ROOT</br>
+`STATIC_ROOT = BASE_DIR / 'staticfiles'`
+
+4.4. Ajouter à settings le STATICFILES_DIRS et importer la librairie os
+`STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)`
+`import os`
+
+4.6. Créer le dossier templates à la racine du projets
+
+4.7. Créer la base html dans le dossier templates
+
+4.8. Ajouter le templates html appelant le bootstrap, voir [Bootstrap CDN](https://www.bootstrapcdn.com/)
+
+4.9. Etendre le ficher de base dans les templates</br>
+`{% extends 'base.html' %}`
+
+4.10. Ajouter le contenu dans la page dans les balises</br>
+`{% block content %}`</br>
+`{% endblock %}`
+
+## 5. Intégrer les éléments de navigation
+
+5.1 ajouter dans le dossier template à la racine du projet, le fichier navbar.html
+
+5.2. récupérer le modèle de navbar que vous désirez sur [Bootstrap navbar](https://getbootstrap.com/docs/4.3/components/navbar/) coller le modèle dans le fichier navbar.html
+
+5.3. inclure dans le fichier base.html le contenu de la navbar avec la commande suivante:</br>
+`{% include 'navbar.html' %}`
 
 ## Points importants à connaître
 
@@ -59,10 +94,11 @@ Cliquer sur le terminal et faire Ctrl+C
 `.gitignore`
 
 4. Activer l'environnement virtuel
-<br/>
+</br>
 `.\venv\Scripts\activate`
 
+5. Figer les librairies installés dans le fichier requirements.txt</br>
+`pip freeze > requirements.txt`
 
-
-
-
+6. Installer les librairies téléchargés du projet</br>
+`pip install -r requirements.txt`
