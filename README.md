@@ -4,7 +4,7 @@
 
 1.1. S'assurer que l'on a le programme pour créer un environnement virtuel 
 </br>
-`virtualenv--version`
+`virtualenv --version`
 
 1.2. Créer l'environnement virtuel
 </br>
@@ -44,6 +44,32 @@
 
 3.3. Préparer le template
 
+## 4. Intégrer Bootstrap au projet
+
+4.1. Ajouter BASE_DIR / "templates" au fichier settings
+
+4.2. Ajouter à settings le STATIC_URL</br>
+`STATIC_URL = '/static/'`
+
+4.3. Ajouter à settings le STATIC_ROOT</br>
+`STATIC_ROOT = BASE_DIR / 'staticfiles'`
+
+4.4. Ajouter à settings le STATICFILES_DIRS et importer la librairie os
+`STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)`
+`import os`
+
+4.6. Créer le dossier templates à la racine du projets
+
+4.7. Créer la base html dans le dossier templates
+
+4.8. Ajouter le templates html appelant le bootstrap, voir [Bootstrap CDN](https://www.bootstrapcdn.com/)
+
+4.9. Etendre le ficher de base dans les templates</br>
+`{% extends 'base.html' %}`
+
+4.10. Ajouter le contenu dans la page dans les balises</br>
+`{% block content %}`</br>
+`{% endblock %}`
 
 ## Points importants à connaître
 
@@ -67,11 +93,3 @@ Cliquer sur le terminal et faire Ctrl+C
 
 6. Installer les librairies téléchargés du projet</br>
 `pip install -r requirements.txt`
-
-
-
-
-
-
-
-
