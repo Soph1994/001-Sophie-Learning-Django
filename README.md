@@ -80,6 +80,58 @@
 5.3. inclure dans le fichier base.html le contenu de la navbar avec la commande suivante:</br>
 `{% include 'navbar.html' %}`
 
+## 6. Créer un modèle de donnée
+
+6.1. aller dans le dossier blogs, puis le fichier models.py. Créer le model Post.
+
+6.2. Préparer les scripts du models de données avec la commande suivante:
+`python manage.py makemigrations`
+
+6.3. Générer les tables dans la base de donnée
+`python manage.py migrate`
+
+## 7. Ajouter des données au modèle de donnée
+
+7.1. importer le model dans le fichier admin.py
+`from .models import Post`
+
+7.2. Ajouter le modèle Post au menu admin
+`admin.site.register(Post)`
+
+7.3. Créer un superuser dans le terminal et suivez les instructions
+`python manage.py createsuperuser`
+
+7.4. Se connecter a l'espace Admin
+`localhost:8000/admin`
+
+7.5. Ajouter deux lignes au modèle Post
+
+## 8. Ajouter une ListView
+
+8.1. création d'un url
+
+8.2. création d'une ListView
+
+8.3. création d'un folder template ListView
+
+8.4. Ajouter l'extension de la base.html et les blocks content
+
+8.5. Créer une boucle sur les blogs dans le template blog_list.html
+
+## 9. Mettre dans une table html la ListView
+
+9.1. Mettre le format de table bootstrap. [table bootstrap](https://getbootstrap.com/docs/4.0/content/tables/)
+
+9.2. Intégrer la boucle dans la table html 
+
+## 10. Ajouter une Vue CREER Blog
+
+10.1. Ajouter une url
+
+10.2. Ajouter une vue
+
+10.3 Ajouter un template
+
 ## Points importants à connaître
 
 1. Arrêter le serveur Django en serveur local
