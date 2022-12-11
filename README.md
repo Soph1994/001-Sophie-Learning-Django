@@ -80,6 +80,16 @@
 5.3. inclure dans le fichier base.html le contenu de la navbar avec la commande suivante:</br>
 `{% include 'navbar.html' %}`
 
+## 6. Créer un modèle de donnée
+
+6.1. aller dans le dossier blogs, puis le fichier models.py. Créer le model Post.
+
+6.2. Préparer les scripts du models de données avec la commande suivante:
+`python manage.py makemigrations`
+
+6.3. Générer les tables dans la base de donnée
+`python manage.py migrate`
+
 ## Points importants à connaître
 
 1. Arrêter le serveur Django en serveur local
