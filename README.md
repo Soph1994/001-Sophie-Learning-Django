@@ -45,20 +45,21 @@
 3.3. Préparer le template
 
 
-## Points importants à connaître
+## X. Points importants à connaître
 
-1. Arrêter le serveur Django en serveur local
+X.1. Arrêter le serveur Django en serveur local
+</br>
 Cliquer sur le terminal et faire Ctrl+C
 
-2. Initialiser un dossier Git
+X.2. Initialiser un dossier Git
 </br>
 `git init`
 
-3. Ajouter un fichier pour ignaurer les fichiers que l'on ne doit pas suivre:
+X.3. Ajouter un fichier pour ignaurer les fichiers que l'on ne doit pas suivre:
 </br>
 `.gitignore`
 
-4. Activer l'environnement virtuel
+X.4. Activer l'environnement virtuel
 <br/>
 `.\venv\Scripts\activate`
 
